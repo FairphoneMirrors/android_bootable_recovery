@@ -206,12 +206,11 @@ void ScreenRecoveryUI::SetColor(UIElement e) {
 // Should only be called with updateMutex locked.
 void ScreenRecoveryUI::draw_screen_locked()
 {
-    if (!show_text) {
-        draw_background_locked(currentIcon);
-        draw_progress_locked();
-    } else {
+    draw_background_locked(currentIcon);
+    draw_progress_locked();
+
+    if (show_text) {
         gr_color(0, 0, 0, 255);
-        gr_clear();
 
         int y = 0;
         int i = 0;
