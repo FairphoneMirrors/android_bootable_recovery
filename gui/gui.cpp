@@ -788,7 +788,7 @@ std::string gui_parse_text(std::string str)
 extern "C" int gui_init(void)
 {
 	gr_init();
-	std::string curtain_path = TWRES "images/curtain.jpg";
+	std::string curtain_path = TWRES "images/curtain_fp.jpg";
 	gr_surface source_Surface = NULL;
 
 	if (res_create_surface(curtain_path.c_str(), &source_Surface))

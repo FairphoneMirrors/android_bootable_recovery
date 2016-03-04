@@ -779,7 +779,7 @@ void DataManager::SetDefaultValues()
 	mValues.insert(make_pair(TW_BACKUP_NAME, make_pair("(Auto Generate)", 0)));
 
 	mValues.insert(make_pair(TW_REBOOT_AFTER_FLASH_VAR, make_pair("0", 1)));
-	mValues.insert(make_pair(TW_SIGNED_ZIP_VERIFY_VAR, make_pair("0", 1)));
+	mValues.insert(make_pair(TW_SIGNED_ZIP_VERIFY_VAR, make_pair("1", 1)));
 	mValues.insert(make_pair(TW_FORCE_MD5_CHECK_VAR, make_pair("0", 1)));
 	mValues.insert(make_pair(TW_COLOR_THEME_VAR, make_pair("0", 1)));
 	mValues.insert(make_pair(TW_USE_COMPRESSION_VAR, make_pair("0", 1)));
