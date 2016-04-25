@@ -358,7 +358,9 @@ int main(int argc, char **argv) {
 
 #ifndef TW_OEM_BUILD
 	// Disable flashing of stock recovery
+#if 0
 	TWFunc::Disable_Stock_Recovery_Replace();
+#endif
 	// Check for su to see if the device is rooted or not
 	if (PartitionManager.Mount_By_Path("/system", false) && DataManager::GetIntValue("tw_mount_system_ro") == 0) {
 		if (TWFunc::Path_Exists("/supersu/su") && !TWFunc::Path_Exists("/system/bin/su") && !TWFunc::Path_Exists("/system/xbin/su") && !TWFunc::Path_Exists("/system/bin/.ext/.su")) {
